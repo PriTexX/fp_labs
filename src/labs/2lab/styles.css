@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+}
+
+.task.completed {
+  background: #f8f9fa;
+}
+
+.filter-container {
+  margin: 20px 0;
+}
+
+.filter-btn {
+  margin-right: 10px;
+  background: #6c757d;
+}
+
+.filter-btn.active {
+  background: #007bff;
+}
+
+.delete {
+  background: #dc3545;
+  margin-left: auto;
+}
+
+.delete:hover {
+  background: #c82333;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}

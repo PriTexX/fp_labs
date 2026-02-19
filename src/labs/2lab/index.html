@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список задач</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Список задач</h1>
+    <input type="text" id="taskInput" placeholder="Введите новую задачу..." />
+    <button onclick="addTask()">Добавить</button>
+
+    <div class="filter-container">
+      <button class="filter-btn active" onclick="setFilter('all')">Все</button>
+      <button class="filter-btn" onclick="setFilter('pending')">
+        Невыполненные
+      </button>
+      <button class="filter-btn" onclick="setFilter('completed')">
+        Выполненные
+      </button>
+    </div>
+
+    <ul id="tasks"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
