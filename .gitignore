@@ -1,1 +1,4 @@
 node_modules/*
+FSLabs/obj/*
+FSLabs/bin/*
+FSLabs/.idea/*
