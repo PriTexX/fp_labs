@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>Калькулятор</h1>
+
+      <div class="display">
+        <input type="number" id="num1" placeholder="Первое число" step="any" />
+        <span id="operation">?</span>
+        <input type="number" id="num2" placeholder="Второе число" step="any" />
+        <button id="calculateBtn">Вычислить</button>
+      </div>
+
+      <div class="result" id="result">Результат: —</div>
+
+      <div class="buttons">
+        <div class="row">
+          <button onclick="setOperation('add')">➕ Сложение</button>
+          <button onclick="setOperation('subtract')">➖ Вычитание</button>
+        </div>
+        <div class="row">
+          <button onclick="setOperation('multiply')">✖️ Умножение</button>
+          <button onclick="setOperation('divide')">➗ Деление</button>
+        </div>
+        <div class="row">
+          <button onclick="setOperation('power')">⬆️ Степень</button>
+          <button onclick="setOperation('sqrt')">🧾 √ Квадратный корень</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./dist/script.js"></script>
+  </body>
+</html>
